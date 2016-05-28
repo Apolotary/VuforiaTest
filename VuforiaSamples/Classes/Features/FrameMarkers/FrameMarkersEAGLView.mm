@@ -81,7 +81,7 @@ namespace {
 
 @implementation FrameMarkersEAGLView
 {
-    char* _currentMarkerName;
+    NSString *_currMarkerString;
 }
 
 @synthesize vapp;
@@ -272,11 +272,21 @@ namespace {
         const Vuforia::MarkerResult*>(trackableResult);
         const Vuforia::Marker& marker = markerResult->getTrackable();
         
-        //!!!: Where recognition happens
+        // !!!: Where recognition happens
         
         NSLog(@"[%s] tracked", marker.getName());
+        
+        NSString *markerName = [NSString stringWithFormat:@"%s", marker.getName()];
+        
         if (trackableResult->getStatus() == Vuforia::TrackableResult::EXTENDED_TRACKED) {
             NSLog(@"[%s] tracked with target out of view!", marker.getName());
+        }
+        
+        if (!_currMarkerString || ![_currMarkerString isEqualToString:markerName])
+        {
+            _currMarkerString = markerName;
+            
+            [_delegate updateChannelWithMarkerName:_currMarkerString];
         }
 
         

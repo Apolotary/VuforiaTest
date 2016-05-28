@@ -15,6 +15,12 @@ countries.
 #import "SampleApplicationSession.h"
 #import "SampleGLResourceHandler.h"
 
+@protocol ChannelMarkerUpdateProtocol <NSObject>
+
+- (void) updateChannelWithMarkerName:(NSString *)markerName;
+
+@end
+
 static const int kNumAugmentationTextures = 4;
 
 
@@ -47,6 +53,7 @@ static const int kNumAugmentationTextures = 4;
 }
 
 @property (nonatomic, weak) SampleApplicationSession * vapp;
+@property (nonatomic, weak) id<ChannelMarkerUpdateProtocol> delegate;
 
 - (id)initWithFrame:(CGRect)frame appSession:(SampleApplicationSession *) app;
 

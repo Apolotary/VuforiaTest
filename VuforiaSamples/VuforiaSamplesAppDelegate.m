@@ -9,6 +9,15 @@ Copyright (c) 2015 PTC Inc. All Rights Reserved.
 
 #import "VuforiaSamplesAppDelegate.h"
 
+
+#import "BRPdManager.h"
+
+#import "BRConstants.h"
+
+#import "DDASLLogger.h"
+#import "DDTTYLogger.h"
+
+
 @interface VuforiaSamplesAppDelegate ()
 
 @end
@@ -16,8 +25,11 @@ Copyright (c) 2015 PTC Inc. All Rights Reserved.
 @implementation VuforiaSamplesAppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+    [self setupLogger];
+    BRPdManager *pdManager = [BRPdManager sharedInstance];
+    [pdManager openPatch:@"receive_pd.pd" withPath:[[NSBundle mainBundle] bundlePath]];
     return YES;
 }
 
@@ -46,6 +58,14 @@ Copyright (c) 2015 PTC Inc. All Rights Reserved.
 
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+}
+
+#pragma mark - DDLog setup
+
+- (void) setupLogger
+{
+    [DDLog addLogger:[DDASLLogger sharedInstance]];
+    [DDLog addLogger:[DDTTYLogger sharedInstance]];
 }
 
 @end

@@ -12,7 +12,37 @@
 		0A3F1A1B1CF574BF001EEC5F /* license_3rdpartynotice.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F1A151CF574BF001EEC5F /* license_3rdpartynotice.txt */; };
 		0A3F1A1C1CF574BF001EEC5F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F1A161CF574BF001EEC5F /* readme.txt */; };
 		0A3F1A1D1CF574BF001EEC5F /* readme.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F1A181CF574BF001EEC5F /* readme.txt */; };
+		0A3F1A251CF5A81E001EEC5F /* BRBonjourOSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A201CF5A81E001EEC5F /* BRBonjourOSCClient.m */; };
+		0A3F1A261CF5A81E001EEC5F /* BRConstants.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A221CF5A81E001EEC5F /* BRConstants.m */; };
+		0A3F1A271CF5A81E001EEC5F /* BRPdManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A241CF5A81E001EEC5F /* BRPdManager.m */; };
+		0A3F1A291CF5A8BF001EEC5F /* receive_pd.pd in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F1A281CF5A8BF001EEC5F /* receive_pd.pd */; };
+		0A3F1A4A1CF5AFD1001EEC5F /* F53OSCBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A2D1CF5AFD1001EEC5F /* F53OSCBundle.m */; };
+		0A3F1A4B1CF5AFD1001EEC5F /* F53OSCClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A2F1CF5AFD1001EEC5F /* F53OSCClient.m */; };
+		0A3F1A4C1CF5AFD1001EEC5F /* F53OSCMessage.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A321CF5AFD1001EEC5F /* F53OSCMessage.m */; };
+		0A3F1A4D1CF5AFD1001EEC5F /* F53OSCPacket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A341CF5AFD1001EEC5F /* F53OSCPacket.m */; };
+		0A3F1A4E1CF5AFD1001EEC5F /* F53OSCParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A361CF5AFD1001EEC5F /* F53OSCParser.m */; };
+		0A3F1A4F1CF5AFD1001EEC5F /* F53OSCServer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A391CF5AFD1001EEC5F /* F53OSCServer.m */; };
+		0A3F1A501CF5AFD1001EEC5F /* F53OSCSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A3B1CF5AFD1001EEC5F /* F53OSCSocket.m */; };
+		0A3F1A511CF5AFD1001EEC5F /* F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A3D1CF5AFD1001EEC5F /* F53OSCTimeTag.m */; };
+		0A3F1A521CF5AFD1001EEC5F /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 0A3F1A3E1CF5AFD1001EEC5F /* LICENSE.txt */; };
+		0A3F1A531CF5AFD1001EEC5F /* MetatoneNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A401CF5AFD1001EEC5F /* MetatoneNetworkManager.m */; };
+		0A3F1A541CF5AFD1001EEC5F /* NSData+F53OSCBlob.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A421CF5AFD1001EEC5F /* NSData+F53OSCBlob.m */; };
+		0A3F1A551CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A441CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.m */; };
+		0A3F1A561CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A461CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.m */; };
+		0A3F1A571CF5AFD1001EEC5F /* NSString+F53OSCString.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A481CF5AFD1001EEC5F /* NSString+F53OSCString.m */; };
+		0A3F1A581CF5AFD1001EEC5F /* README.markdown in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A491CF5AFD1001EEC5F /* README.markdown */; };
+		0A3F1A661CF5B149001EEC5F /* httpreceive.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A5B1CF5B149001EEC5F /* httpreceive.c */; };
+		0A3F1A671CF5B149001EEC5F /* httpreq.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A5C1CF5B149001EEC5F /* httpreq.c */; };
+		0A3F1A681CF5B149001EEC5F /* tcpclient.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A5D1CF5B149001EEC5F /* tcpclient.c */; };
+		0A3F1A691CF5B149001EEC5F /* tcpreceive.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A5E1CF5B149001EEC5F /* tcpreceive.c */; };
+		0A3F1A6A1CF5B149001EEC5F /* tcpsend.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A5F1CF5B149001EEC5F /* tcpsend.c */; };
+		0A3F1A6B1CF5B149001EEC5F /* tcpserver.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A601CF5B149001EEC5F /* tcpserver.c */; };
+		0A3F1A6C1CF5B149001EEC5F /* udpreceive.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A611CF5B149001EEC5F /* udpreceive.c */; };
+		0A3F1A6D1CF5B149001EEC5F /* udpreceive~.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A621CF5B149001EEC5F /* udpreceive~.c */; };
+		0A3F1A6E1CF5B149001EEC5F /* udpsend.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A631CF5B149001EEC5F /* udpsend.c */; };
+		0A3F1A6F1CF5B149001EEC5F /* udpsend~.c in Sources */ = {isa = PBXBuildFile; fileRef = 0A3F1A641CF5B149001EEC5F /* udpsend~.c */; };
 		18EB634C1ACC70F200EF1C28 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 18EB634B1ACC70F200EF1C28 /* Localizable.strings */; };
+		3D0685626D741DE662836D7A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 39F670011A51F0AD6B11156A /* libPods.a */; };
 		D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EB1A1B4AA20041ECF3 /* main.m */; };
 		D21B07EF1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D21B07EE1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m */; };
 		D21B07F71A1B4AA20041ECF3 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D21B07F61A1B4AA20041ECF3 /* Images.xcassets */; };
@@ -216,7 +246,60 @@
 		0A3F1A151CF574BF001EEC5F /* license_3rdpartynotice.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = license_3rdpartynotice.txt; sourceTree = "<group>"; };
 		0A3F1A161CF574BF001EEC5F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
 		0A3F1A181CF574BF001EEC5F /* readme.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = readme.txt; sourceTree = "<group>"; };
+		0A3F1A1F1CF5A81E001EEC5F /* BRBonjourOSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRBonjourOSCClient.h; sourceTree = "<group>"; };
+		0A3F1A201CF5A81E001EEC5F /* BRBonjourOSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRBonjourOSCClient.m; sourceTree = "<group>"; };
+		0A3F1A211CF5A81E001EEC5F /* BRConstants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRConstants.h; sourceTree = "<group>"; };
+		0A3F1A221CF5A81E001EEC5F /* BRConstants.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRConstants.m; sourceTree = "<group>"; };
+		0A3F1A231CF5A81E001EEC5F /* BRPdManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRPdManager.h; sourceTree = "<group>"; };
+		0A3F1A241CF5A81E001EEC5F /* BRPdManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRPdManager.m; sourceTree = "<group>"; };
+		0A3F1A281CF5A8BF001EEC5F /* receive_pd.pd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = receive_pd.pd; sourceTree = "<group>"; };
+		0A3F1A2B1CF5AFD1001EEC5F /* F53OSC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSC.h; sourceTree = "<group>"; };
+		0A3F1A2C1CF5AFD1001EEC5F /* F53OSCBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCBundle.h; sourceTree = "<group>"; };
+		0A3F1A2D1CF5AFD1001EEC5F /* F53OSCBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCBundle.m; sourceTree = "<group>"; };
+		0A3F1A2E1CF5AFD1001EEC5F /* F53OSCClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCClient.h; sourceTree = "<group>"; };
+		0A3F1A2F1CF5AFD1001EEC5F /* F53OSCClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCClient.m; sourceTree = "<group>"; };
+		0A3F1A301CF5AFD1001EEC5F /* F53OSCFoundationAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCFoundationAdditions.h; sourceTree = "<group>"; };
+		0A3F1A311CF5AFD1001EEC5F /* F53OSCMessage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCMessage.h; sourceTree = "<group>"; };
+		0A3F1A321CF5AFD1001EEC5F /* F53OSCMessage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCMessage.m; sourceTree = "<group>"; };
+		0A3F1A331CF5AFD1001EEC5F /* F53OSCPacket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCPacket.h; sourceTree = "<group>"; };
+		0A3F1A341CF5AFD1001EEC5F /* F53OSCPacket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCPacket.m; sourceTree = "<group>"; };
+		0A3F1A351CF5AFD1001EEC5F /* F53OSCParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCParser.h; sourceTree = "<group>"; };
+		0A3F1A361CF5AFD1001EEC5F /* F53OSCParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCParser.m; sourceTree = "<group>"; };
+		0A3F1A371CF5AFD1001EEC5F /* F53OSCProtocols.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCProtocols.h; sourceTree = "<group>"; };
+		0A3F1A381CF5AFD1001EEC5F /* F53OSCServer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCServer.h; sourceTree = "<group>"; };
+		0A3F1A391CF5AFD1001EEC5F /* F53OSCServer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCServer.m; sourceTree = "<group>"; };
+		0A3F1A3A1CF5AFD1001EEC5F /* F53OSCSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCSocket.h; sourceTree = "<group>"; };
+		0A3F1A3B1CF5AFD1001EEC5F /* F53OSCSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCSocket.m; sourceTree = "<group>"; };
+		0A3F1A3C1CF5AFD1001EEC5F /* F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = F53OSCTimeTag.h; sourceTree = "<group>"; };
+		0A3F1A3D1CF5AFD1001EEC5F /* F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = F53OSCTimeTag.m; sourceTree = "<group>"; };
+		0A3F1A3E1CF5AFD1001EEC5F /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		0A3F1A3F1CF5AFD1001EEC5F /* MetatoneNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MetatoneNetworkManager.h; sourceTree = "<group>"; };
+		0A3F1A401CF5AFD1001EEC5F /* MetatoneNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MetatoneNetworkManager.m; sourceTree = "<group>"; };
+		0A3F1A411CF5AFD1001EEC5F /* NSData+F53OSCBlob.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+F53OSCBlob.h"; sourceTree = "<group>"; };
+		0A3F1A421CF5AFD1001EEC5F /* NSData+F53OSCBlob.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+F53OSCBlob.m"; sourceTree = "<group>"; };
+		0A3F1A431CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+F53OSCTimeTag.h"; sourceTree = "<group>"; };
+		0A3F1A441CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+F53OSCTimeTag.m"; sourceTree = "<group>"; };
+		0A3F1A451CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+F53OSCNumber.h"; sourceTree = "<group>"; };
+		0A3F1A461CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+F53OSCNumber.m"; sourceTree = "<group>"; };
+		0A3F1A471CF5AFD1001EEC5F /* NSString+F53OSCString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+F53OSCString.h"; sourceTree = "<group>"; };
+		0A3F1A481CF5AFD1001EEC5F /* NSString+F53OSCString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+F53OSCString.m"; sourceTree = "<group>"; };
+		0A3F1A491CF5AFD1001EEC5F /* README.markdown */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.markdown; sourceTree = "<group>"; };
+		0A3F1A591CF5B08C001EEC5F /* VuforiaSamples-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "VuforiaSamples-Prefix.pch"; sourceTree = "<group>"; };
+		0A3F1A5B1CF5B149001EEC5F /* httpreceive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpreceive.c; sourceTree = "<group>"; };
+		0A3F1A5C1CF5B149001EEC5F /* httpreq.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = httpreq.c; sourceTree = "<group>"; };
+		0A3F1A5D1CF5B149001EEC5F /* tcpclient.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpclient.c; sourceTree = "<group>"; };
+		0A3F1A5E1CF5B149001EEC5F /* tcpreceive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpreceive.c; sourceTree = "<group>"; };
+		0A3F1A5F1CF5B149001EEC5F /* tcpsend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpsend.c; sourceTree = "<group>"; };
+		0A3F1A601CF5B149001EEC5F /* tcpserver.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = tcpserver.c; sourceTree = "<group>"; };
+		0A3F1A611CF5B149001EEC5F /* udpreceive.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udpreceive.c; sourceTree = "<group>"; };
+		0A3F1A621CF5B149001EEC5F /* udpreceive~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "udpreceive~.c"; sourceTree = "<group>"; };
+		0A3F1A631CF5B149001EEC5F /* udpsend.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = udpsend.c; sourceTree = "<group>"; };
+		0A3F1A641CF5B149001EEC5F /* udpsend~.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "udpsend~.c"; sourceTree = "<group>"; };
+		0A3F1A651CF5B149001EEC5F /* udpsend~.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "udpsend~.h"; sourceTree = "<group>"; };
+		0E70BB7D30D28EC42B623DDE /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		18EB634B1ACC70F200EF1C28 /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+		39F670011A51F0AD6B11156A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		5E52C6D1F0218807CBAF8F59 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		D21B07E61A1B4AA20041ECF3 /* Vuforia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Vuforia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D21B07EB1A1B4AA20041ECF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D21B07ED1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = VuforiaSamplesAppDelegate.h; sourceTree = "<group>"; };
@@ -398,6 +481,7 @@
 				D21B08761A1B6AD60041ECF3 /* Security.framework in Frameworks */,
 				D21B08771A1B6AD60041ECF3 /* SystemConfiguration.framework in Frameworks */,
 				D21B08781A1B6AD60041ECF3 /* UIKit.framework in Frameworks */,
+				3D0685626D741DE662836D7A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -563,12 +647,92 @@
 			path = samples;
 			sourceTree = "<group>";
 		};
+		0A3F1A1E1CF5A7E9001EEC5F /* BRAudioManager */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F1A2A1CF5AFC3001EEC5F /* MetatoneOSC */,
+				0A3F1A1F1CF5A81E001EEC5F /* BRBonjourOSCClient.h */,
+				0A3F1A201CF5A81E001EEC5F /* BRBonjourOSCClient.m */,
+				0A3F1A211CF5A81E001EEC5F /* BRConstants.h */,
+				0A3F1A221CF5A81E001EEC5F /* BRConstants.m */,
+				0A3F1A231CF5A81E001EEC5F /* BRPdManager.h */,
+				0A3F1A241CF5A81E001EEC5F /* BRPdManager.m */,
+			);
+			name = BRAudioManager;
+			sourceTree = "<group>";
+		};
+		0A3F1A2A1CF5AFC3001EEC5F /* MetatoneOSC */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F1A2B1CF5AFD1001EEC5F /* F53OSC.h */,
+				0A3F1A2C1CF5AFD1001EEC5F /* F53OSCBundle.h */,
+				0A3F1A2D1CF5AFD1001EEC5F /* F53OSCBundle.m */,
+				0A3F1A2E1CF5AFD1001EEC5F /* F53OSCClient.h */,
+				0A3F1A2F1CF5AFD1001EEC5F /* F53OSCClient.m */,
+				0A3F1A301CF5AFD1001EEC5F /* F53OSCFoundationAdditions.h */,
+				0A3F1A311CF5AFD1001EEC5F /* F53OSCMessage.h */,
+				0A3F1A321CF5AFD1001EEC5F /* F53OSCMessage.m */,
+				0A3F1A331CF5AFD1001EEC5F /* F53OSCPacket.h */,
+				0A3F1A341CF5AFD1001EEC5F /* F53OSCPacket.m */,
+				0A3F1A351CF5AFD1001EEC5F /* F53OSCParser.h */,
+				0A3F1A361CF5AFD1001EEC5F /* F53OSCParser.m */,
+				0A3F1A371CF5AFD1001EEC5F /* F53OSCProtocols.h */,
+				0A3F1A381CF5AFD1001EEC5F /* F53OSCServer.h */,
+				0A3F1A391CF5AFD1001EEC5F /* F53OSCServer.m */,
+				0A3F1A3A1CF5AFD1001EEC5F /* F53OSCSocket.h */,
+				0A3F1A3B1CF5AFD1001EEC5F /* F53OSCSocket.m */,
+				0A3F1A3C1CF5AFD1001EEC5F /* F53OSCTimeTag.h */,
+				0A3F1A3D1CF5AFD1001EEC5F /* F53OSCTimeTag.m */,
+				0A3F1A3E1CF5AFD1001EEC5F /* LICENSE.txt */,
+				0A3F1A3F1CF5AFD1001EEC5F /* MetatoneNetworkManager.h */,
+				0A3F1A401CF5AFD1001EEC5F /* MetatoneNetworkManager.m */,
+				0A3F1A411CF5AFD1001EEC5F /* NSData+F53OSCBlob.h */,
+				0A3F1A421CF5AFD1001EEC5F /* NSData+F53OSCBlob.m */,
+				0A3F1A431CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.h */,
+				0A3F1A441CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.m */,
+				0A3F1A451CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.h */,
+				0A3F1A461CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.m */,
+				0A3F1A471CF5AFD1001EEC5F /* NSString+F53OSCString.h */,
+				0A3F1A481CF5AFD1001EEC5F /* NSString+F53OSCString.m */,
+				0A3F1A491CF5AFD1001EEC5F /* README.markdown */,
+			);
+			name = MetatoneOSC;
+			sourceTree = "<group>";
+		};
+		0A3F1A5A1CF5B131001EEC5F /* udpreceive */ = {
+			isa = PBXGroup;
+			children = (
+				0A3F1A5B1CF5B149001EEC5F /* httpreceive.c */,
+				0A3F1A5C1CF5B149001EEC5F /* httpreq.c */,
+				0A3F1A5D1CF5B149001EEC5F /* tcpclient.c */,
+				0A3F1A5E1CF5B149001EEC5F /* tcpreceive.c */,
+				0A3F1A5F1CF5B149001EEC5F /* tcpsend.c */,
+				0A3F1A601CF5B149001EEC5F /* tcpserver.c */,
+				0A3F1A611CF5B149001EEC5F /* udpreceive.c */,
+				0A3F1A621CF5B149001EEC5F /* udpreceive~.c */,
+				0A3F1A631CF5B149001EEC5F /* udpsend.c */,
+				0A3F1A641CF5B149001EEC5F /* udpsend~.c */,
+				0A3F1A651CF5B149001EEC5F /* udpsend~.h */,
+			);
+			name = udpreceive;
+			sourceTree = "<group>";
+		};
+		C1432FD610EBC5E6C4342A95 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5E52C6D1F0218807CBAF8F59 /* Pods.debug.xcconfig */,
+				0E70BB7D30D28EC42B623DDE /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D21B07DD1A1B4AA10041ECF3 = {
 			isa = PBXGroup;
 			children = (
 				D21B087B1A1B6C710041ECF3 /* Frameworks */,
 				D21B07E81A1B4AA20041ECF3 /* VuforiaSamples */,
 				D21B07E71A1B4AA20041ECF3 /* Products */,
+				C1432FD610EBC5E6C4342A95 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -595,9 +759,12 @@
 		D21B07E91A1B4AA20041ECF3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				0A3F1A5A1CF5B131001EEC5F /* udpreceive */,
+				0A3F1A281CF5A8BF001EEC5F /* receive_pd.pd */,
 				18EB634B1ACC70F200EF1C28 /* Localizable.strings */,
 				D21B08291A1B50E20041ECF3 /* VuforiaSamples-Info.plist */,
 				D21B07EB1A1B4AA20041ECF3 /* main.m */,
+				0A3F1A591CF5B08C001EEC5F /* VuforiaSamples-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -623,6 +790,7 @@
 			children = (
 				D21B07ED1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.h */,
 				D21B07EE1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m */,
+				0A3F1A1E1CF5A7E9001EEC5F /* BRAudioManager */,
 				D21B08101A1B4C2F0041ECF3 /* Features */,
 				D21B08131A1B4C6A0041ECF3 /* SampleApplication */,
 				D21B08141A1B4C860041ECF3 /* SampleAppUI */,
@@ -724,6 +892,7 @@
 				D21B086E1A1B6AD60041ECF3 /* Security.framework */,
 				D21B086F1A1B6AD60041ECF3 /* SystemConfiguration.framework */,
 				D21B08701A1B6AD60041ECF3 /* UIKit.framework */,
+				39F670011A51F0AD6B11156A /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -1003,9 +1172,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D21B08091A1B4AA20041ECF3 /* Build configuration list for PBXNativeTarget "VuforiaSamples" */;
 			buildPhases = (
+				F85BA05A1FD7EF2CA6E91D3D /* Check Pods Manifest.lock */,
 				D21B07E21A1B4AA20041ECF3 /* Sources */,
 				D21B07E31A1B4AA20041ECF3 /* Frameworks */,
 				D21B07E41A1B4AA20041ECF3 /* Resources */,
+				4F57BF8E4AC40A9FE596C1D5 /* Embed Pods Frameworks */,
+				7978C76E91437825C97B8C1E /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -1070,6 +1242,7 @@
 				18EB634C1ACC70F200EF1C28 /* Localizable.strings in Resources */,
 				0A3F1A1C1CF574BF001EEC5F /* readme.txt in Resources */,
 				D23617831A933AD7009A2192 /* VB.png in Resources */,
+				0A3F1A291CF5A8BF001EEC5F /* receive_pd.pd in Resources */,
 				FB7A43441A8E376B0068CF5E /* custom_toolbar_texture.png in Resources */,
 				FB7A43301A8E376B0068CF5E /* FlakesBox.dat in Resources */,
 				FB7A433C1A8E376B0068CF5E /* TextureTeapotRed.png in Resources */,
@@ -1101,6 +1274,7 @@
 				FB7A434A1A8E376B0068CF5E /* Wood.dat in Resources */,
 				D21B08661A1B69A10041ECF3 /* Line.vertsh in Resources */,
 				0A3F1A1D1CF574BF001EEC5F /* readme.txt in Resources */,
+				0A3F1A521CF5AFD1001EEC5F /* LICENSE.txt in Resources */,
 				FB7A43241A8E376B0068CF5E /* TextureSoccerBall.png in Resources */,
 				FBC15EB41AB0585C00B8327E /* VirtualButtonLineShader.fragsh in Resources */,
 				FB7A43291A8E376B0068CF5E /* letter_Q.png in Resources */,
@@ -1127,37 +1301,108 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4F57BF8E4AC40A9FE596C1D5 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		7978C76E91437825C97B8C1E /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F85BA05A1FD7EF2CA6E91D3D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D21B07E21A1B4AA20041ECF3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				D21B085E1A1B698A0041ECF3 /* SampleApplicationUtils.cpp in Sources */,
+				0A3F1A4F1CF5AFD1001EEC5F /* F53OSCServer.m in Sources */,
 				D23617771A932C35009A2192 /* RefFreeFrame.mm in Sources */,
 				D21B085F1A1B698A0041ECF3 /* Texture.mm in Sources */,
 				D21B07EF1A1B4AA20041ECF3 /* VuforiaSamplesAppDelegate.m in Sources */,
+				0A3F1A6C1CF5B149001EEC5F /* udpreceive.c in Sources */,
+				0A3F1A661CF5B149001EEC5F /* httpreceive.c in Sources */,
+				0A3F1A541CF5AFD1001EEC5F /* NSData+F53OSCBlob.m in Sources */,
+				0A3F1A531CF5AFD1001EEC5F /* MetatoneNetworkManager.m in Sources */,
+				0A3F1A4B1CF5AFD1001EEC5F /* F53OSCClient.m in Sources */,
+				0A3F1A581CF5AFD1001EEC5F /* README.markdown in Sources */,
 				D23617811A932CD3009A2192 /* CustomToolbar.m in Sources */,
+				0A3F1A6D1CF5B149001EEC5F /* udpreceive~.c in Sources */,
 				D249EFDE1A91E07100B56674 /* FrameMarkersEAGLView.mm in Sources */,
 				D249EFEB1A91F54300B56674 /* VirtualButtonsViewController.mm in Sources */,
 				FB7A43631A8E49BA0068CF5E /* SampleAppSelectorViewController.m in Sources */,
 				D29B5CEC1A92556300024A6C /* WordlistView.m in Sources */,
 				D21B082D1A1B555B0041ECF3 /* SampleAppAboutViewController.m in Sources */,
+				0A3F1A271CF5A81E001EEC5F /* BRPdManager.m in Sources */,
+				0A3F1A511CF5AFD1001EEC5F /* F53OSCTimeTag.m in Sources */,
 				D2DC72C01A8F631800A62FCD /* ObjectRecoEAGLView.mm in Sources */,
 				FB7A43501A8E38AB0068CF5E /* ImageTargetsEAGLView.mm in Sources */,
 				D23BE4AC1A8F5A570053C636 /* MultiTargetsEAGLView.mm in Sources */,
+				0A3F1A4A1CF5AFD1001EEC5F /* F53OSCBundle.m in Sources */,
+				0A3F1A4C1CF5AFD1001EEC5F /* F53OSCMessage.m in Sources */,
 				D2DC72C11A8F631800A62FCD /* ObjectRecoViewController.mm in Sources */,
 				FB2F73C11A7FD5920098C5DD /* SampleAppMenuViewController.mm in Sources */,
+				0A3F1A691CF5B149001EEC5F /* tcpreceive.c in Sources */,
+				0A3F1A571CF5AFD1001EEC5F /* NSString+F53OSCString.m in Sources */,
+				0A3F1A551CF5AFD1001EEC5F /* NSDate+F53OSCTimeTag.m in Sources */,
 				FB7A43601A8E47540068CF5E /* CylinderTargetsViewController.mm in Sources */,
 				D23BE4AD1A8F5A570053C636 /* MultiTargetsViewController.mm in Sources */,
 				D21B07EC1A1B4AA20041ECF3 /* main.m in Sources */,
 				D2D73CDE1A9263740081B7A8 /* CloudRecoViewController.mm in Sources */,
 				FB7A435E1A8E47540068CF5E /* CylinderModel.cpp in Sources */,
 				D21B085C1A1B698A0041ECF3 /* SampleApplicationSession.mm in Sources */,
+				0A3F1A251CF5A81E001EEC5F /* BRBonjourOSCClient.m in Sources */,
 				D21B085B1A1B698A0041ECF3 /* SampleApplication3DModel.m in Sources */,
 				D29B5CEA1A92556300024A6C /* TextRecoEAGLView.mm in Sources */,
+				0A3F1A6B1CF5B149001EEC5F /* tcpserver.c in Sources */,
+				0A3F1A561CF5AFD1001EEC5F /* NSNumber+F53OSCNumber.m in Sources */,
 				D23617791A932C35009A2192 /* UserDefinedTargetsViewController.mm in Sources */,
+				0A3F1A4E1CF5AFD1001EEC5F /* F53OSCParser.m in Sources */,
+				0A3F1A6E1CF5B149001EEC5F /* udpsend.c in Sources */,
+				0A3F1A6F1CF5B149001EEC5F /* udpsend~.c in Sources */,
+				0A3F1A4D1CF5AFD1001EEC5F /* F53OSCPacket.m in Sources */,
 				FB1024ED1A82814000A2536F /* UnwindMenuSegue.m in Sources */,
 				D249EFEA1A91F54300B56674 /* VirtualButtonsEAGLView.mm in Sources */,
+				0A3F1A681CF5B149001EEC5F /* tcpclient.c in Sources */,
 				D249EFDF1A91E07100B56674 /* FrameMarkersViewController.mm in Sources */,
 				D23617781A932C35009A2192 /* UserDefinedTargetsEAGLView.mm in Sources */,
 				D29B5CEB1A92556300024A6C /* TextRecoViewController.mm in Sources */,
@@ -1166,8 +1411,12 @@
 				D21B085D1A1B698A0041ECF3 /* SampleApplicationShaderUtils.m in Sources */,
 				D23617801A932CD3009A2192 /* CustomButton.m in Sources */,
 				D249EFE01A91E07100B56674 /* VuforiaObject3D.m in Sources */,
+				0A3F1A261CF5A81E001EEC5F /* BRConstants.m in Sources */,
+				0A3F1A501CF5AFD1001EEC5F /* F53OSCSocket.m in Sources */,
+				0A3F1A671CF5B149001EEC5F /* httpreq.c in Sources */,
 				D2D73CDD1A9263740081B7A8 /* CloudRecoEAGLView.mm in Sources */,
 				FB7A43511A8E38AB0068CF5E /* ImageTargetsViewController.mm in Sources */,
+				0A3F1A6A1CF5B149001EEC5F /* tcpsend.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1269,6 +1518,7 @@
 		};
 		D21B080A1A1B4AA20041ECF3 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5E52C6D1F0218807CBAF8F59 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1276,12 +1526,17 @@
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = ./build/include;
+				GCC_PREFIX_HEADER = "VuforiaSamples/VuforiaSamples-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./build/include,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					../../build/lib/arm,
 					"$(PROJECT_DIR)/vuforia-sdk-ios-5-5-9/build/lib/arm",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = Vuforia;
 				PROVISIONING_PROFILE = "";
@@ -1292,6 +1547,7 @@
 		};
 		D21B080B1A1B4AA20041ECF3 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0E70BB7D30D28EC42B623DDE /* Pods.release.xcconfig */;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD)";
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -1300,12 +1556,17 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CURRENT_PROJECT_VERSION = 21;
 				ENABLE_BITCODE = NO;
-				HEADER_SEARCH_PATHS = ./build/include;
+				GCC_PREFIX_HEADER = "VuforiaSamples/VuforiaSamples-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					./build/include,
+					"$(inherited)",
+				);
 				INFOPLIST_FILE = "VuforiaSamples/VuforiaSamples-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LIBRARY_SEARCH_PATHS = (
 					../../build/lib/arm,
 					"$(PROJECT_DIR)/vuforia-sdk-ios-5-5-9/build/lib/arm",
+					"$(inherited)",
 				);
 				PRODUCT_NAME = VuforiaSamples;
 				PROVISIONING_PROFILE = "";

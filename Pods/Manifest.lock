@@ -1,0 +1,39 @@
+PODS:
+  - CocoaAsyncSocket (7.4.3):
+    - CocoaAsyncSocket/All (= 7.4.3)
+  - CocoaAsyncSocket/All (7.4.3):
+    - CocoaAsyncSocket/GCD
+    - CocoaAsyncSocket/RunLoop
+  - CocoaAsyncSocket/GCD (7.4.3)
+  - CocoaAsyncSocket/RunLoop (7.4.3)
+  - CocoaLumberjack (1.9.2):
+    - CocoaLumberjack/Extensions (= 1.9.2)
+  - CocoaLumberjack/Core (1.9.2)
+  - CocoaLumberjack/Extensions (1.9.2):
+    - CocoaLumberjack/Core
+  - EstimoteSDK (3.8.2)
+  - libpd (0.8.3)
+
+DEPENDENCIES:
+  - CocoaAsyncSocket (~> 7.3)
+  - CocoaLumberjack (~> 1.8)
+  - EstimoteSDK (~> 3.2)
+  - libpd (from `https://github.com/libpd/libpd`)
+
+EXTERNAL SOURCES:
+  libpd:
+    :git: https://github.com/libpd/libpd
+    :submodules: true
+
+CHECKOUT OPTIONS:
+  libpd:
+    :commit: ad548cc7600e7f95a894389764bca822c0b0cdae
+    :git: https://github.com/libpd/libpd
+
+SPEC CHECKSUMS:
+  CocoaAsyncSocket: a18c75dca4b08723628a0bacca6e94803d90be91
+  CocoaLumberjack: 628fca2e88ef06f7cf6817309aa405f325d9a6fa
+  EstimoteSDK: 5e36b596f9f28161bff35b086d9f70282be5f513
+  libpd: d758aa585c2f1d6f0d85fcfc99da4ec509172e75
+
+COCOAPODS: 0.39.0

@@ -15,11 +15,23 @@ countries.
 #import <Vuforia/Trackable.h>
 #import <Vuforia/CameraDevice.h>
 
+#import "BRBonjourOSCClient.h"
+#import "BRPdManager.h"
+#import "BRConstants.h"
+
 #import "UnwindMenuSegue.h"
 #import "PresentMenuSegue.h"
 #import "SampleAppMenuViewController.h"
 
-@interface FrameMarkersViewController ()
+@interface FrameMarkersViewController ()<BonjourOSCReceiverDelegate, ChannelMarkerUpdateProtocol>
+{
+    BRBonjourOSCClient *_bonjourOSCClient;
+    NSString *_stringChannel;
+    NSString *_stringIP;
+    NSString *_stringName;
+    NSString *_stringLog;
+    BRConnectionStatus _status;
+}
 
 @property (weak, nonatomic) IBOutlet UIImageView *ARViewPlaceholder;
 
@@ -28,6 +40,31 @@ countries.
 @implementation FrameMarkersViewController
 
 @synthesize tapGestureRecognizer, vapp, eaglView;
+
+
+#pragma mark - Channel marker update protocol
+
+- (void) updateChannelWithMarkerName:(NSString *)markerName
+{
+    [_bonjourOSCClient disconnectFromStreamingServer];
+    if ([markerName isEqualToString:@"MarkerQ"])
+    {
+        [_bonjourOSCClient setChannelNumber:1];
+    }
+    else if ([markerName isEqualToString:@"MarkerC"])
+    {
+        [_bonjourOSCClient setChannelNumber:2];
+    }
+    else if ([markerName isEqualToString:@"MarkerA"])
+    {
+        [_bonjourOSCClient setChannelNumber:3];
+    }
+    else if ([markerName isEqualToString:@"MarkerR"])
+    {
+        [_bonjourOSCClient setChannelNumber:4];
+    }
+    [_bonjourOSCClient connectToStreamingServer];
+}
 
 
 - (CGRect)getCurrentARViewFrame
@@ -63,6 +100,7 @@ countries.
     CGRect viewFrame = [self getCurrentARViewFrame];
     
     eaglView = [[FrameMarkersEAGLView alloc] initWithFrame:viewFrame appSession:vapp];
+    eaglView.delegate = self;
     [self setView:eaglView];
     VuforiaSamplesAppDelegate *appDelegate = (VuforiaSamplesAppDelegate*)[[UIApplication sharedApplication] delegate];
     appDelegate.glResourceHandler = eaglView;
@@ -126,11 +164,52 @@ countries.
 }
 
 
+#pragma mark - OSC DELEGATE
+
+- (void)receiveOSCMessage: (F53OSCMessage *) message
+{
+    NSString *oscMessage = [NSString stringWithFormat:@"OSC message: %@ %@", message.addressPattern, message.arguments.description];
+    [self updateLogWithMessage:oscMessage updateConnectionStatus:YES];
+}
+
+- (void)updateLogWithMessage: (NSString *) message
+      updateConnectionStatus: (BOOL) shouldUpdate
+{
+//    if (shouldUpdate)
+//    {
+//        [self updateStatuses];
+//    }
+    
+    _stringLog = [NSString stringWithFormat:@"%@ \n %@", _stringLog, message];
+    NSLog(@"%@", _stringLog);
+}
+
+- (void)connectToServer
+{
+    [_bonjourOSCClient connectToStreamingServer];
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     self.showingMenu = NO;
+    
+    _stringChannel = @"1";
+    
+    NSString *clientName = [NSString stringWithFormat:@"%@%@", kBonjourServiceNameTemplate, _stringChannel];
+    
+    if (_bonjourOSCClient)
+    {
+        [_bonjourOSCClient advertiseBonjourServiceWithName:clientName];
+    }
+    else
+    {
+        _bonjourOSCClient = [[BRBonjourOSCClient alloc] initWithServiceName:clientName];
+        [_bonjourOSCClient setOscDelegate:self];
+    }
+    
+    [NSTimer scheduledTimerWithTimeInterval:5.0 target:self selector:@selector(connectToServer) userInfo:nil repeats:NO];
     
     // Do any additional setup after loading the view.
     [self.navigationController setNavigationBarHidden:YES animated:NO];
